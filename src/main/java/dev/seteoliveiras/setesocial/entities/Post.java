@@ -1,4 +1,4 @@
-package entities;
+package dev.seteoliveiras.setesocial.entities;
 
 import java.time.Instant;
 
@@ -9,6 +9,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -20,6 +22,8 @@ public class Post {
     @Column(name = "post_id")
     private Long postId;
 
+    @ManyToOne
+    @JoinColumn(name = "user_id")
     private User user;
     
     private String content;

@@ -1,4 +1,4 @@
-package entities;
+package dev.seteoliveiras.setesocial.entities;
 
 
 import jakarta.persistence.Column;

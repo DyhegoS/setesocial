@@ -1,4 +1,4 @@
-package entities;
+package dev.seteoliveiras.setesocial.entities;
 
 import java.util.Set;
 import java.util.UUID;
@@ -62,5 +62,9 @@ public class User {
 
     public Set<Role> getRoles() {
         return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
     }
 }
