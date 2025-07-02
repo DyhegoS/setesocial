@@ -7,5 +7,4 @@ import dev.seteoliveiras.setesocial.entities.Post;
 
 @Repository
 public interface PostRepository extends JpaRepository<Post, Long>{
-
 }
